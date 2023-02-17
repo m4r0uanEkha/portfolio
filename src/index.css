@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main {
+    background-color: var(--background-light);
+}
+
+.main.dark {
+    background-color: var(--background-dark);
+}
+
+:root {
+    --primary-color-light: #54433a;
+    --secondary-color-light: #ddd5d0;
+    /* --alternative-color-light: #7fd1ae; */
+    --alternative-color-light: #ff856b;
+    --text-light: #000;
+    --background-light: #fbf2ed;
+    --sun-background: #f9df36;
+
+    --primary-color-dark: #f99136;
+    --secondary-color-dark: #917159;
+    --alternative-color-dark: #3c6571;
+    --text-dark: #ffffff;
+    --background-dark: #063641;
+    --moon-background: #2d3537;
+}
