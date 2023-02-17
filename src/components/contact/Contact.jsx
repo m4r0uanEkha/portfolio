@@ -14,7 +14,7 @@ const Contact = (props) => {
                 <input type={'text'} placeholder="Subject" />
                 <input type={'email'} placeholder="Email" />
                 <textarea placeholder="Message body" />
-                <button type='submit'>Send</button>
+                <button type='submit' disabled={true}>Send</button>
             </form>
         </div>
     )
