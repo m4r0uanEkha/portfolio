@@ -8,7 +8,7 @@ const XPCard = (props) => {
         <div className={`xp-card${darkTheme ? " dark" : ""}`}>
             <h5>{type}</h5>
             <h2>{title}</h2>
-            {logoEmployer != logoClient ?
+            {logoEmployer !== logoClient ?
                 <>
                     <h5>Employer</h5>
                     <img src={logoEmployer} alt="logoEmployer" />
