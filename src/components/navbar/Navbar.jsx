@@ -14,7 +14,7 @@ const Navbar = (props) => {
             <div className={`nav-header${props.darkTheme ? " dark" : ""}`}>
                 <a href='#about' ><HiUser />About me</a>
                 <a href='#skills' ><BsFillBookmarkStarFill />Skills</a>
-                <a href='#proExperience' ><BsFillJournalBookmarkFill />Professional Experiences</a>
+                <a href='#experiences' ><BsFillJournalBookmarkFill />Professional Experiences</a>
                 <a href='#contact' ><BsFillChatRightTextFill />Contact me</a>
             </div>
             <div className='nav-theme' onClick={(event) => {

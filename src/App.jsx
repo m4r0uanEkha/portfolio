@@ -1,10 +1,10 @@
 import React from 'react'
-import About from './components/about/About'
-import Contact from './components/contact/Contact'
-import Experience from './components/experience/Experience'
-import Footer from './components/footer/Footer'
+import About from './components/About'
+import Contact from './components/Contact'
+import Experience from './components/Experience'
+import Footer from './components/Footer'
 import Navbar from './components/navbar/Navbar'
-import Skills from './components/skills/Skills'
+import Skills from './components/Skills'
 
 const App = () => {
 

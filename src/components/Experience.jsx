@@ -1,12 +1,11 @@
 import React from 'react'
-import "./experience.css"
-import XPCard from './XPCard'
-import logo_enedis from "../../assets/logo_enedis.svg"
-import logo_bnp from "../../assets/logo_bnp.svg"
-import logo_worldline from "../../assets/logo_worldline.svg"
-import logo_moneyline from "../../assets/logo_moneyline.png"
-import logo_bluebeep from "../../assets/logo_bluebeep.png"
-import logo_accenture from "../../assets/logo_accenture.svg"
+import XPCard from './ExperienceCard'
+import logo_enedis from "../assets/logo_enedis.svg"
+import logo_bnp from "../assets/logo_bnp.svg"
+import logo_worldline from "../assets/logo_worldline.svg"
+import logo_moneyline from "../assets/logo_moneyline.png"
+import logo_bluebeep from "../assets/logo_bluebeep.png"
+import logo_accenture from "../assets/logo_accenture.svg"
 
 const Experience = (props) => {
 
@@ -90,9 +89,9 @@ const Experience = (props) => {
     })
 
     return (
-        <div id='proExperience' className={`xp-container${props.darkTheme ? " dark" : ""}`}>
+        <div id='experiences' className={`container${props.darkTheme ? " dark" : ""}`}>
             <h5>- Professional experiences -</h5>
-            <section className='xp-cards'>
+            <section className='experience-cards'>
                 {cards}
             </section>
         </div>

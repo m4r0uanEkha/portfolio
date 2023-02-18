@@ -1,13 +1,12 @@
 import React from 'react'
-import "./about.css"
-import Picture from "../../assets/picture_from_side.jpg"
+import Picture from "../assets/picture_from_side.jpg"
 import { MdLanguage } from "react-icons/md"
 import { FaPaintBrush } from "react-icons/fa"
 import { BsBoxArrowUpRight } from "react-icons/bs"
 
 const About = (props) => {
     return (
-        <div id='about' className={`about-container${props.darkTheme ? " dark" : ""}`}>
+        <div id='about' className={`container${props.darkTheme ? " dark" : ""}`}>
             <h5>- About me -</h5>
             <h1>Marouane Khatar<a href='https://repertoire.iesf.fr/#profile/ae616229b1435b08172b1a2f6598148c' target={'_blank'}><BsBoxArrowUpRight /></a></h1>
             <h3>Software engineer</h3>
@@ -24,7 +23,7 @@ const About = (props) => {
                     <small>French [Fluent]</small>
                     <small>German [A1 - A2 level]</small>
                     <h5><FaPaintBrush />Hobbies</h5>
-                    <small>Traveling [Morocco, France, Spain, Belgium, Saudi Arabia]</small>
+                    <small>Traveling [Morocco, France, Spain, Belgium]</small>
                     <small>Sports [Football, Climbing]</small>
                 </div>
             </div>
