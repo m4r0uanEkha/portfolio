@@ -42,6 +42,11 @@
     transition: all 500ms ease;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     z-index: 4;
+    position: relative;
+}
+
+.triangle {
+    background: transparent;
 }
 
 .skills-container.dark .skills-bubble {
@@ -73,6 +78,26 @@
 
     .skills-bubble:hover {
         scale: 1.3;
+    }
+
+    .triangle {
+        background: transparent;
+        width: 0;
+        height: 0;
+        border: solid 14px var(--secondary-color-light);
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-top-width: 20px;
+        position: absolute;
+        bottom: -25px;
+        right: calc(50% - 15px);
+        z-index: -1;
+        transition: all 500ms ease;
+    }
+
+    .skills-container.dark .triangle {
+        border-top-color: var(--secondary-color-dark);
     }
 
     .skills-img {
