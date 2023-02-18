@@ -9,7 +9,6 @@ import Skills from './components/skills/Skills'
 const App = () => {
 
     const [darkTheme, setDarkTheme] = React.useState(true)
-    console.log("dark", darkTheme)
 
     return (
         <>

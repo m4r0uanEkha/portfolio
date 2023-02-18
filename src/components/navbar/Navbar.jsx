@@ -17,7 +17,10 @@ const Navbar = (props) => {
                 <a href='#proExperience' ><BsFillJournalBookmarkFill />Professional Experiences</a>
                 <a href='#contact' ><BsFillChatRightTextFill />Contact me</a>
             </div>
-            <div className='nav-theme' onClick={() => props.setDarkTheme(prevState => !prevState)}>
+            <div className='nav-theme' onClick={(event) => {
+                event.stopPropagation()
+                props.setDarkTheme(prevState => !prevState)
+            }}>
                 {!props.darkTheme && <span className='nav-theme-thumb-light'><FiSun /></span>}
                 {props.darkTheme && <span className='nav-theme-thumb-dark'><FiMoon /></span>}
             </div>
