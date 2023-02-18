@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.e43b6673.css",
-    "main.js": "/portfolio/static/js/main.52a69744.js",
+    "main.js": "/portfolio/static/js/main.8e702be4.js",
     "static/media/picture_from_side.jpg": "/portfolio/static/media/picture_from_side.ffa33470ff3941317e3e.jpg",
     "static/media/logo_moneyline.png": "/portfolio/static/media/logo_moneyline.0187654ef31ee3ad86c0.png",
     "static/media/logo_bnp.svg": "/portfolio/static/media/logo_bnp.721898d0ebac13111cc26b330256eb2f.svg",
@@ -12,10 +12,10 @@
     "static/media/logo_accenture.svg": "/portfolio/static/media/logo_accenture.4a223beb16d64197b791ed537c3065af.svg",
     "index.html": "/portfolio/index.html",
     "main.e43b6673.css.map": "/portfolio/static/css/main.e43b6673.css.map",
-    "main.52a69744.js.map": "/portfolio/static/js/main.52a69744.js.map"
+    "main.8e702be4.js.map": "/portfolio/static/js/main.8e702be4.js.map"
   },
   "entrypoints": [
     "static/css/main.e43b6673.css",
-    "static/js/main.52a69744.js"
+    "static/js/main.8e702be4.js"
   ]
 }
