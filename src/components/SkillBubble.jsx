@@ -1,11 +1,10 @@
 import React from 'react'
 import { FaLocationArrow } from "react-icons/fa"
 
-const Bubble = (props) => {
+const Bubble = ({ text }) => {
     return (
         <div className="skill-bubble">
-            {props.text}
-            {/* <div className="triangle"></div> */}
+            {text}
             <FaLocationArrow className="skill-bubble-arrow" />
         </div>
     )

@@ -20,9 +20,10 @@ const Navbar = (props) => {
             <div className='nav-theme' onClick={(event) => {
                 event.stopPropagation()
                 props.setDarkTheme(prevState => !prevState)
-            }}>
+            }}> 
                 {!props.darkTheme && <span className='nav-theme-thumb-light'><FiSun /></span>}
                 {props.darkTheme && <span className='nav-theme-thumb-dark'><FiMoon /></span>}
+
             </div>
         </nav>
     )

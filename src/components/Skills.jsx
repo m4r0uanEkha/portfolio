@@ -3,9 +3,9 @@ import React from 'react'
 import Picture from "../assets/profil.jpg"
 import Bubble from './SkillBubble'
 
-const Skills = (props) => {
+const Skills = ({ darkTheme }) => {
   return (
-      <div id='skills' className={`container${props.darkTheme ? " dark" : ""}`}>
+      <div id='skills' className={`container${darkTheme ? " dark" : ""}`}>
           <h5>- Skills -</h5>
           <img src={Picture} alt="profil" className='skills-img' />
           <div className="skills-grid">

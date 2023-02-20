@@ -4,9 +4,9 @@ import { MdLanguage } from "react-icons/md"
 import { FaPaintBrush } from "react-icons/fa"
 import { BsBoxArrowUpRight } from "react-icons/bs"
 
-const About = (props) => {
+const About = ({ darkTheme }) => {
     return (
-        <div id='about' className={`container${props.darkTheme ? " dark" : ""}`}>
+        <div id='about' className={`container${darkTheme ? " dark" : ""}`}>
             <h5>- About me -</h5>
             <h1>Marouane Khatar<a href='https://repertoire.iesf.fr/#profile/ae616229b1435b08172b1a2f6598148c' target={'_blank'}><BsBoxArrowUpRight /></a></h1>
             <h3>Software engineer</h3>

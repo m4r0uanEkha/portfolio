@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Contact = (props) => {
+const Contact = ({ darkTheme }) => {
 
     const submit = (event) => {
         event.preventDefault()
@@ -8,7 +8,7 @@ const Contact = (props) => {
     }
 
     return (
-        <div id='contact' className={`container${props.darkTheme ? " dark" : ""}`}>
+        <div id='contact' className={`container${darkTheme ? " dark" : ""}`}>
             <h5>- Contact me -</h5>
             <form className='contact-form' onSubmit={submit}>
                 <input type={'text'} placeholder="Subject" />

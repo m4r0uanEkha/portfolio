@@ -7,7 +7,7 @@ import logo_moneyline from "../assets/logo_moneyline.png"
 import logo_bluebeep from "../assets/logo_bluebeep.png"
 import logo_accenture from "../assets/logo_accenture.svg"
 
-const Experience = (props) => {
+const Experience = ({ darkTheme }) => {
 
     const xp = [
         {
@@ -84,12 +84,12 @@ const Experience = (props) => {
             tasks={e.tasks} 
             logoEmployer={e.logoEmployer} 
             logoClient={e.logoClient} 
-            darkTheme={props.darkTheme}
+            darkTheme={darkTheme}
         />
     })
 
     return (
-        <div id='experiences' className={`container${props.darkTheme ? " dark" : ""}`}>
+        <div id='experiences' className={`container${darkTheme ? " dark" : ""}`}>
             <h5>- Professional experiences -</h5>
             <section className='experience-cards'>
                 {cards}
