@@ -223,6 +223,8 @@ h2 {
     text-indent: 1rem;
     border-radius: 7px;
     width: 70%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .contact-form>textarea {
@@ -232,6 +234,8 @@ h2 {
     text-indent: 1rem;
     border-radius: 7px;
     resize: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .contact-form>button {
@@ -244,6 +248,7 @@ h2 {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
+/* FOOTER */
 .container[id="footer"] {
     display: flex;
     flex-direction: column;
@@ -470,6 +475,12 @@ h2 {
         flex-wrap: wrap;
     }
 
+    .experience-card {
+        max-width: 45%;
+    }
+}
+
+@media screen and (min-width: 1150px) {
     .experience-card {
         max-width: 35%;
     }
