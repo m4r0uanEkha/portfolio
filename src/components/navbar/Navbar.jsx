@@ -7,11 +7,11 @@ import { TbMessages } from "react-icons/tb"
 import { RiMessage3Fill } from "react-icons/ri"
 import { FiSun, FiMoon } from "react-icons/fi"
 
-const Navbar = (props) => {
+const Navbar = ({ darkTheme, setDarkTheme }) => {
 
     return (
-        <nav className={props.darkTheme ? "dark" : ""}>
-            <div className={`nav--header${props.darkTheme ? " dark" : ""}`}>
+        <nav className={darkTheme ? "dark" : ""}>
+            <div className={`nav--header${darkTheme ? " dark" : ""}`}>
                 <ul className='nav--header-list'>
                     <li><a href='#about' ><HiUser />About me</a></li>
                     <li><a href='#skills' ><BsFillBookmarkStarFill />Skills</a></li>
@@ -21,11 +21,11 @@ const Navbar = (props) => {
                 
             </div>
             <div className='nav--toggle' onClick={(event) => {
-                event.stopPropagation()
-                props.setDarkTheme(prevState => !prevState)
+                // event.stopPropagation()
+                setDarkTheme(prevState => !prevState)
             }}> 
-                {!props.darkTheme && <span className='nav--toggle-thumb-light'><FiSun /></span>}
-                {props.darkTheme && <span className='nav--toggle-thumb-dark'><FiMoon /></span>}
+                {!darkTheme && <span className='nav--toggle-thumb light'><FiSun /></span>}
+                {darkTheme && <span className='nav--toggle-thumb dark'><FiMoon /></span>}
 
             </div>
         </nav>
