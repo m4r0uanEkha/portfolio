@@ -11,18 +11,21 @@ const Navbar = (props) => {
 
     return (
         <nav className={props.darkTheme ? "dark" : ""}>
-            <div className={`nav-header${props.darkTheme ? " dark" : ""}`}>
-                <a href='#about' ><HiUser />About me</a>
-                <a href='#skills' ><BsFillBookmarkStarFill />Skills</a>
-                <a href='#experiences' ><BsFillJournalBookmarkFill />Professional Experiences</a>
-                <a href='#contact' ><BsFillChatRightTextFill />Contact me</a>
+            <div className={`nav--header${props.darkTheme ? " dark" : ""}`}>
+                <ul className='nav--header-list'>
+                    <li><a href='#about' ><HiUser />About me</a></li>
+                    <li><a href='#skills' ><BsFillBookmarkStarFill />Skills</a></li>
+                    <li><a href='#experiences' ><BsFillJournalBookmarkFill />Professional Experiences</a></li>
+                    <li><a href='#contact' ><BsFillChatRightTextFill />Contact me</a></li>
+                </ul>
+                
             </div>
-            <div className='nav-theme' onClick={(event) => {
+            <div className='nav--toggle' onClick={(event) => {
                 event.stopPropagation()
                 props.setDarkTheme(prevState => !prevState)
             }}> 
-                {!props.darkTheme && <span className='nav-theme-thumb-light'><FiSun /></span>}
-                {props.darkTheme && <span className='nav-theme-thumb-dark'><FiMoon /></span>}
+                {!props.darkTheme && <span className='nav--toggle-thumb-light'><FiSun /></span>}
+                {props.darkTheme && <span className='nav--toggle-thumb-dark'><FiMoon /></span>}
 
             </div>
         </nav>
