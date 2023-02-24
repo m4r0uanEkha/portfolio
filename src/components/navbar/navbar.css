@@ -92,6 +92,7 @@ nav.dark .nav--toggle {
     background-color: var(--sun-background);
     color: var(--text-light);
     left: 3px;
+    top: 3px;
 }
 
 .nav--toggle-thumb.dark {

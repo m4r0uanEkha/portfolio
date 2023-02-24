@@ -1,4 +1,5 @@
 import React from 'react'
+import "./footer.css"
 import { FaLinkedin, FaTwitterSquare, FaInstagramSquare, FaFacebookSquare } from "react-icons/fa"
 
 const Footer = ({ darkTheme }) => {

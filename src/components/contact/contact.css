@@ -1,0 +1,127 @@
+/* CONTACT ME */
+.container[id="contact"] {
+    padding: 2em 0;
+    position: relative;
+}
+
+.contact--form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+input {
+    height: 3rem;
+    text-indent: 1rem;
+    border-radius: 7px;
+    width: 70%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    transition: all 0.4s ease;
+    animation: move 1s linear;
+}
+input:nth-of-type(1) {
+    animation: move 0.3s linear;
+}
+input:nth-of-type(2) {
+    animation: move 0.6s linear;
+}
+input:nth-of-type(3) {
+    animation: move 0.9s linear;
+}
+@keyframes move {
+    from {
+        transform: translateX(250px);
+    }
+    to {
+            transform: translateX(0);
+    }
+}
+
+input:focus {
+    width: 75%;
+}
+
+textarea {
+    height: 5rem;
+    padding: 7px 0;
+    width: 70%;
+    text-indent: 1rem;
+    text-decoration: none;
+    font-weight: lighter;
+    border-radius: 7px;
+    resize: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    animation: move 1.2s linear;
+}
+
+.contact--form>button {
+    max-width: max-content;
+    padding: 10px 35px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    margin-top: 25px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.contact--toast {
+    color: white;
+    max-width: 70%;
+    text-align: center;
+    padding: 1em;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(225, 238, 248, 0.3);
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    transition: all 1s ease;
+    text-overflow: clip;
+}
+
+h4 {
+    text-overflow: clip;
+}
+
+.contact--back {
+    padding: 0.5em 1em 0.3em 1.1em;
+    margin-top: 1em;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--secondary-color-light);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.contact--back:hover {
+    background-color: var(--alternative-color-light);
+    scale: 1.1;
+}
+
+.container[id="contact"].dark .contact--back {
+    color: var(--text-dark);
+    background-color: var(--secondary-color-dark);
+}
+
+.container[id="contact"].dark .contact--back:hover {
+    background-color: var(--alternative-color-dark);
+}
+
+.contact--toast-loader {
+    margin-top: 1em;
+    font-size: x-large;
+    animation: rotate infinite 1s linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateZ(0);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}

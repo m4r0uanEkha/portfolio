@@ -1,5 +1,6 @@
 import React from 'react'
-import Picture from "../assets/picture_from_side.jpg"
+import "./about.css"
+import Picture from "../../assets/picture_from_side.jpg"
 import { MdLanguage } from "react-icons/md"
 import { FaPaintBrush } from "react-icons/fa"
 import { BsBoxArrowUpRight } from "react-icons/bs"

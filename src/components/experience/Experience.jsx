@@ -1,11 +1,12 @@
 import React from 'react'
+import "./experience.css"
 import XPCard from './ExperienceCard'
-import logo_enedis from "../assets/logo_enedis.svg"
-import logo_bnp from "../assets/logo_bnp.svg"
-import logo_worldline from "../assets/logo_worldline.svg"
-import logo_moneyline from "../assets/logo_moneyline.png"
-import logo_bluebeep from "../assets/logo_bluebeep.png"
-import logo_accenture from "../assets/logo_accenture.svg"
+import logo_enedis from "../../assets/logo_enedis.svg"
+import logo_bnp from "../../assets/logo_bnp.svg"
+import logo_worldline from "../../assets/logo_worldline.svg"
+import logo_moneyline from "../../assets/logo_moneyline.png"
+import logo_bluebeep from "../../assets/logo_bluebeep.png"
+import logo_accenture from "../../assets/logo_accenture.svg"
 
 const Experience = ({ darkTheme }) => {
 

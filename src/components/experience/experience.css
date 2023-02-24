@@ -1,0 +1,78 @@
+/* PROFESSIONAL EXPERIENCES */
+.container[id="experiences"] {
+    margin-top: 5em;
+    padding: 2em;
+}
+
+.experience-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.experience-card {
+    background-color: var(--secondary-color-light);
+    border-radius: 20px;
+    max-width: 100%;
+    max-height: max-content;
+    padding: 25px;
+    transition: all 500ms ease;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.experience-card:hover {
+    background-color: var(--alternative-color-light);
+    transform: scale(1.05);
+}
+
+.experience-card>ul {
+    text-align: start;
+    margin: 15px 0 25px 25px;
+    color: var(--text-light);
+    list-style-position: outside;
+    line-height: 2em;
+}
+
+.experience-card>img {
+    max-width: 50%;
+}
+
+.experience-card>ul li::marker {
+    color: var(--primary-color-light);
+}
+
+.experience-card.dark {
+    background-color: var(--secondary-color-dark);
+}
+
+.experience-card.dark:hover {
+    background-color: var(--alternative-color-dark);
+}
+
+.experience-card.dark>ul {
+    color: var(--text-dark);
+}
+
+.experience-card.dark>ul li::marker {
+    color: var(--primary-color-dark);
+}
+
+@media screen and (min-width: 800px) {
+    .experience-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .experience-card {
+        max-width: 45%;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .experience-card {
+        max-width: 35%;
+    }
+}

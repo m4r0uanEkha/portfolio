@@ -1,6 +1,7 @@
 import React from 'react'
+import "./skills.css"
 
-import Picture from "../assets/profil.jpg"
+import Picture from "../../assets/profil.jpg"
 import Bubble from './SkillBubble'
 
 const Skills = ({ darkTheme }) => {
