@@ -59,6 +59,11 @@
 }
 
 @media screen and (min-width: 800px) {
+
+    .container[id="experiences"] {
+        scroll-margin-top: 5em;
+    }
+
     .experience-cards {
         display: flex;
         flex-direction: row;

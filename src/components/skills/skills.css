@@ -74,6 +74,7 @@
 
     .container[id="skills"] {
         position: relative;
+        scroll-margin-top: 5em;
     }
 
     .skills-img {

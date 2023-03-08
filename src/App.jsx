@@ -6,6 +6,8 @@ import Footer from './components/footer/Footer'
 import Navbar from './components/navbar/Navbar'
 import Skills from './components/skills/Skills'
 
+import Zoom from 'react-reveal'
+
 const App = () => {
 
     const [darkTheme, setDarkTheme] = React.useState(true)
@@ -14,10 +16,12 @@ const App = () => {
         <>
             <Navbar darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
             <div className={`main${darkTheme ? " dark" : ""}`}>
-                <About darkTheme={darkTheme} />
-                <Skills darkTheme={darkTheme} />
-                <Experience darkTheme={darkTheme} />
-                <Contact darkTheme={darkTheme} />
+                <Zoom>
+                    <About darkTheme={darkTheme} />
+                    <Skills darkTheme={darkTheme} />
+                    <Experience darkTheme={darkTheme} />
+                    <Contact darkTheme={darkTheme} />
+                </Zoom>
                 <Footer darkTheme={darkTheme} />
             </div>
         </>

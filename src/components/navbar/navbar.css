@@ -52,6 +52,23 @@ nav {
     justify-content: center;
     z-index: 5;
     background: var(--background-light);
+    transition: all 0.4s smooth;
+    -webkit-transition: 0.4s;
+    animation: translate linear 0.4s;
+}
+
+@keyframes translate {
+    from {
+        -webkit-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+
+    to {
+        -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        transform: translateY(0px);
+    }
 }
 
 nav.dark {

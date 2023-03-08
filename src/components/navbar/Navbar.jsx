@@ -18,16 +18,17 @@ const Navbar = ({ darkTheme, setDarkTheme }) => {
                     <li><a href='#experiences' ><BsFillJournalBookmarkFill />Professional Experiences</a></li>
                     <li><a href='#contact' ><BsFillChatRightTextFill />Contact me</a></li>
                 </ul>
-                
+
             </div>
             <div className='nav--toggle' onClick={(event) => {
                 // event.stopPropagation()
                 setDarkTheme(prevState => !prevState)
-            }}> 
+            }}>
                 {!darkTheme && <span className='nav--toggle-thumb light'><FiSun /></span>}
                 {darkTheme && <span className='nav--toggle-thumb dark'><FiMoon /></span>}
 
             </div>
+
         </nav>
     )
 }

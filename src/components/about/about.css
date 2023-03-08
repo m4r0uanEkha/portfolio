@@ -12,18 +12,23 @@
     border-radius: 5%;
     width: 17rem;
     margin-top: 1rem;
-    transition: all 1s ease;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
     animation: slide 1s;
 }
 
 @keyframes slide {
     from {
-        margin-right: 100%;
+        -webkit-transform: translateX(-150px);
+        -ms-transform: translateX(-150px);
+        transform: translateX(-150px);
     }
 
     to {
-        margin-right: 0%;
+        -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        transform: translateX(0%);
     }
 }
 
@@ -46,6 +51,7 @@
 
     .container[id="about"] {
         margin-top: 5em;
+        scroll-margin-top: 5em;
     }
 
     .about-details {
