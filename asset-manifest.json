@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.cf65a7ae.css",
-    "main.js": "/portfolio/static/js/main.7eaf0c50.js",
+    "main.css": "/portfolio/static/css/main.b126925a.css",
+    "main.js": "/portfolio/static/js/main.e75c3ddf.js",
     "static/media/picture_from_side.jpg": "/portfolio/static/media/picture_from_side.ffa33470ff3941317e3e.jpg",
     "static/media/logo_moneyline.png": "/portfolio/static/media/logo_moneyline.0187654ef31ee3ad86c0.png",
     "static/media/logo_bnp.svg": "/portfolio/static/media/logo_bnp.721898d0ebac13111cc26b330256eb2f.svg",
@@ -11,11 +11,11 @@
     "static/media/logo_enedis.svg": "/portfolio/static/media/logo_enedis.81c7dba5603901592329c15abf4439d5.svg",
     "static/media/logo_accenture.svg": "/portfolio/static/media/logo_accenture.4a223beb16d64197b791ed537c3065af.svg",
     "index.html": "/portfolio/index.html",
-    "main.cf65a7ae.css.map": "/portfolio/static/css/main.cf65a7ae.css.map",
-    "main.7eaf0c50.js.map": "/portfolio/static/js/main.7eaf0c50.js.map"
+    "main.b126925a.css.map": "/portfolio/static/css/main.b126925a.css.map",
+    "main.e75c3ddf.js.map": "/portfolio/static/js/main.e75c3ddf.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf65a7ae.css",
-    "static/js/main.7eaf0c50.js"
+    "static/css/main.b126925a.css",
+    "static/js/main.e75c3ddf.js"
   ]
 }
