@@ -6,7 +6,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2.2rem 6rem;
+    /* padding: 2.2rem 6rem; */
+    padding: 2.2rem 3rem;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
@@ -14,34 +15,51 @@
     background-color: var(--secondary-color-dark);
 }
 
-.nav--header-list {
-    list-style: none;
-}
-
-.nav--header-list>li {
-    margin: 1rem 0;
-    font-size: large;
-}
-
-.nav--header-list a {
+.nav--burger {
+    /* align-self: flex-end; */
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: var(--text-light);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    width: 100%;
 }
 
-.nav--header-list a:hover {
-    color: var(--alternative-color-light);
-}
-
-.nav--header.dark a {
+nav.dark .nav--burger {
     color: var(--text-dark);
 }
 
-.nav--header.dark a:hover {
+.nav--small-menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1em;
+    -webkit-transition: transform 0.2s ease;
+    transition: transform 0.2s ease;
+    margin-top: -30px;
+    margin-bottom: 10px;
+}
+
+.nav--header-list {
+    list-style: none;
+    display: none;
+}
+
+nav a {
+    color: var(--text-light);
+    font-size: large;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+nav a:hover {
+    color: var(--alternative-color-light);
+}
+
+nav.dark a {
+    color: var(--text-dark);
+}
+
+nav.dark a:hover {
     color: var(--primary-color-dark);
 }
 
@@ -151,6 +169,10 @@ nav.dark .nav--toggle:hover {
         background: transparent;
     }
 
+    .nav--burger {
+        display: none;
+    }
+
     .nav--header {
         padding: 1rem 0.5rem;
     }
@@ -160,5 +182,10 @@ nav.dark .nav--toggle:hover {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        margin: 1rem 0;
+    }
+
+    .nav--small-menu {
+        display: none;
     }
 }
