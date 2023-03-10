@@ -10,7 +10,7 @@
     background-color: var(--background-light);
 }
 
-.main.dark {
+.main.dark, body {
     background-color: var(--background-dark);
 }
 
