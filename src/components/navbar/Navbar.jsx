@@ -17,7 +17,7 @@ const Navbar = ({ darkTheme, setDarkTheme }) => {
             <div className={`nav--header${darkTheme ? " dark" : ""}`}>
 
                 <div className="nav--burger">
-                    <MdMobileFriendly fontSize={30} />
+                    <MdMobileFriendly className={toggleMenu ? "nav--invisible-icon" : ""} fontSize={30} />
                     {
                         toggleMenu ?
                             <MdClose fontSize={35} onClick={() => setToggleMenu(false)} /> :
