@@ -94,8 +94,8 @@ const Experience = ({ darkTheme }) => {
         <div id='experiences' className={`container${darkTheme ? " dark" : ""}`}>
             <h5>- Professional experiences -</h5>
 
-            <section className='experience-cards'>
-                <XPCard className="card-alone"
+            <section className='experience-cards card-alone'>
+                <XPCard
                     type='Data/Dev & Functional skills'
                     title='Development of “Sicuryptor” a biometric and security oriented application'
                     tasks={['Designing all functionalities', 'Implementating all features', 'Designing UI/UX', '3D assets modeling', 'Test realization']}
