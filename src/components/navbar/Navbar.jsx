@@ -43,14 +43,6 @@ const Navbar = ({ darkTheme, setDarkTheme }) => {
                 </ul>
 
             </div>
-            {/* <div className='nav--toggle' onClick={(event) => {
-                // event.stopPropagation()
-                setDarkTheme(prevState => !prevState)
-            }}>
-                {!darkTheme && <span className='nav--toggle-thumb light'><FiSun /></span>}
-                {darkTheme && <span className='nav--toggle-thumb dark'><FiMoon /></span>}
-
-            </div> */}
 
             <label className='nav--toggle'>
                 <input type="checkbox" onChange={() => setDarkTheme(prevState => !prevState)} />
