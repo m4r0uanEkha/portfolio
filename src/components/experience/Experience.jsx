@@ -7,6 +7,7 @@ import logo_worldline from "../../assets/logo_worldline.svg"
 import logo_moneyline from "../../assets/logo_moneyline.png"
 import logo_bluebeep from "../../assets/logo_bluebeep.png"
 import logo_accenture from "../../assets/logo_accenture.svg"
+import logo_google_play from "../../assets/logo_google_play.png"
 
 const Experience = ({ darkTheme }) => {
 
@@ -92,11 +93,16 @@ const Experience = ({ darkTheme }) => {
     return (
         <div id='experiences' className={`container${darkTheme ? " dark" : ""}`}>
             <h5>- Professional experiences -</h5>
-            <XPCard
-                type='Data/Dev & Functional skills'
-                title='Development of “Sicuryptor” a biometric and security oriented application' 
-                tasks={['Designing all functionalities', 'Implementating all features', 'Designing UI/UX', '3D assets modeling', 'Test realization']}
-                darkTheme={darkTheme} />
+
+            <section className='experience-cards'>
+                <XPCard
+                    type='Data/Dev & Functional skills'
+                    title='Development of “Sicuryptor” a biometric and security oriented application'
+                    tasks={['Designing all functionalities', 'Implementating all features', 'Designing UI/UX', '3D assets modeling', 'Test realization']}
+                    logoClient={logo_google_play}
+                    darkTheme={darkTheme} />
+            </section>
+            
             <section className='experience-cards'>
                 {cards}
             </section>
