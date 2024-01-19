@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.3533a3aa.css",
-    "main.js": "/portfolio/static/js/main.7dc80737.js",
+    "main.js": "/portfolio/static/js/main.e3eb888c.js",
     "static/media/picture_from_side.jpg": "/portfolio/static/media/picture_from_side.ffa33470ff3941317e3e.jpg",
     "static/media/logo_moneyline.png": "/portfolio/static/media/logo_moneyline.0187654ef31ee3ad86c0.png",
     "static/media/logo_bnp.svg": "/portfolio/static/media/logo_bnp.721898d0ebac13111cc26b330256eb2f.svg",
     "static/media/profil.jpg": "/portfolio/static/media/profil.e34e681191f12cd39fab.jpg",
+    "static/media/logo_google_play.png": "/portfolio/static/media/logo_google_play.e3d3f46293f8c6bf2f5a.png",
     "static/media/logo_bluebeep.png": "/portfolio/static/media/logo_bluebeep.6c9689ea870d9ce85a29.png",
     "static/media/logo_worldline.svg": "/portfolio/static/media/logo_worldline.902ca2ee8f24ee58a8bfa7f5b42983ba.svg",
     "static/media/logo_enedis.svg": "/portfolio/static/media/logo_enedis.81c7dba5603901592329c15abf4439d5.svg",
     "static/media/logo_accenture.svg": "/portfolio/static/media/logo_accenture.4a223beb16d64197b791ed537c3065af.svg",
     "index.html": "/portfolio/index.html",
     "main.3533a3aa.css.map": "/portfolio/static/css/main.3533a3aa.css.map",
-    "main.7dc80737.js.map": "/portfolio/static/js/main.7dc80737.js.map"
+    "main.e3eb888c.js.map": "/portfolio/static/js/main.e3eb888c.js.map"
   },
   "entrypoints": [
     "static/css/main.3533a3aa.css",
-    "static/js/main.7dc80737.js"
+    "static/js/main.e3eb888c.js"
   ]
 }
