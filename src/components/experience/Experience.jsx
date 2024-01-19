@@ -95,10 +95,11 @@ const Experience = ({ darkTheme }) => {
             <h5>- Professional experiences -</h5>
 
             <section className='experience-cards'>
-                <XPCard
+                <XPCard className="card-alone"
                     type='Data/Dev & Functional skills'
                     title='Development of “Sicuryptor” a biometric and security oriented application'
                     tasks={['Designing all functionalities', 'Implementating all features', 'Designing UI/UX', '3D assets modeling', 'Test realization']}
+                    logoEmployer={logo_google_play}
                     logoClient={logo_google_play}
                     darkTheme={darkTheme} />
             </section>
